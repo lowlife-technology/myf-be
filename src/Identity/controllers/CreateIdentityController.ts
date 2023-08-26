@@ -30,7 +30,7 @@ export class CreateIdentityController {
         phone,
       });
 
-      res.status(201).json(createIdentityUseCase);
+      return res.status(201).json(createIdentityUseCase);
     } catch (error) {
       return res.status(500).json({
         data: null,
